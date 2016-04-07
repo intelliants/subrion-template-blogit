@@ -1,0 +1,139 @@
+
+//
+// Footer blocks
+// --------------------------------------------------
+
+.footer-blocks {
+	background: #f2f2f2;
+	padding: 100px 0;
+	// background: fade(@brand-dark, 97%);
+	// color: lighten(@brand-dark, 24%);
+
+	// .panel-heading {
+	// 	color: lighten(@brand-dark, 24%);
+	// }
+}
+
+
+//
+// Footer
+// --------------------------------------------------
+
+.footer {
+	background: #f5f5f5;
+	// color: lighten(#ddd, 24%);
+	position: relative;
+	border-top: 1px solid #ddd; 
+	color: #999;
+	font-size: 12px;
+	padding: 40px 0;
+	text-align: center;
+
+
+	> .container {
+		position: relative;
+		z-index: 20;
+		width: 700px;
+	}
+	@media (max-width: 767px) {
+		.container  {
+	width: auto;
+  }
+}
+
+	
+	a,
+	a:focus {
+		color: #777;
+		background: none;
+
+		&:hover {
+			color: #444;
+		}
+	}
+}
+
+.copyright {
+	margin: @vertical-rhythm 0 0;
+	position: relative;
+
+	&::before {
+		display: block;
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -15px;
+		width: 100px;
+		height: 1px;
+		background: fade(#fff, 5%);
+	}
+}
+
+.social {
+
+	h4 {
+		margin: 0 0 @vertical-rhythm;
+	}
+
+	a {
+		font-size: 20px;
+		display: inline-block;
+		margin-right: @vertical-rhythm/2;
+		width: 28px;
+		height: 28px;
+		text-align: center;
+		line-height: 28px;
+		border-radius: 50%;
+		background: transparent;
+		margin: 0 10px;
+
+
+		&.twitter:hover {
+			background: #55acee;
+			color: #fff;
+		}
+		&.facebook:hover {
+			background: #3B5998;
+			color: #fff;
+		}
+		&.google-plus:hover {
+			background: #dd4b39;
+			color: #fff;
+		}
+		&.linkedin:hover {
+			background: #0077b5;
+			color: #fff;
+		}
+		&.pinterest:hover {
+			background: #bd081c;
+			color: #fff;
+		}
+	}
+}
+
+
+
+//
+// Back to top button
+// --------------------------------------------------
+
+.back-to-top,
+.back-to-top:focus {
+	float: right;
+	display: block;
+	// width: 30px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	background: #ccc;
+	color: #aaa;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		background: #bbb;
+	}
+}
