@@ -32,7 +32,7 @@
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5170da8b1f667e6d"></script>
 	<!-- AddThis Button END -->
 {else}
-	{if !empty($blog_entries)}
+	{if $blog_entries}
 		<div class="ia-items blogroll">
 			{foreach $blog_entries as $one_blog_entry}
 				<div class="media ia-item">
