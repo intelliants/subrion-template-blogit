@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<template name="blogit">
+<module type="template" name="blogit">
 	<title>Blog it!</title>
 	<summary>Simple yet awesome template for bloggers</summary>
 	<author>Gleb Surinov</author>
 	<contributor>Intelliants LLC</contributor>
-	<version>4.0.0</version>
-	<date>2016-04-06</date>
-	<compatibility>4.0</compatibility>
+	<version>4.1.0</version>
+	<date>2017-02-23</date>
+	<compatibility>4.1</compatibility>
 
 	<layout>
 		<position menu="1" movable="0">account</position>
@@ -44,13 +44,6 @@
 		    type="text" 
 		    description="Max number of items in Main Menu"
 		    order="3002">6</config>
-
-	<config group="template_blogit"
-		    name="enable_landing" 
-		    type="radio"
-		    order="3003" 
-		    values="1,0" 
-		    description="Enable landing page">0</config>
 
 	<config group="template_blogit" 
 		    name="website_bg" 
@@ -245,6 +238,4 @@ Blogit! designed specially for people who likes to write and read. This template
 			]]>
 		</phrase>
 	</phrases>
-
-
-</template>
+</module>

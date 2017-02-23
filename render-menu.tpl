@@ -1,5 +1,5 @@
 {if 'mainmenu' == $position}
-	{ia_menu menus=$menu.contents class="nav navbar-nav nav-main {$menu.classname}"}
+	{ia_menu menus=$menu.contents class="nav navbar-nav nav-main {$menu.classname}" loginout=true}
 {elseif 'inventory' == $position}
 	{ia_menu menus=$menu.contents class="nav navbar-nav navbar-right nav-inventory {$menu.classname}"}
 {elseif 'account' == $position}
@@ -7,7 +7,7 @@
 		<ul class="nav navbar-nav navbar-right nav-account">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					{printImage imgfile=$member.avatar title=$member.fullname|default:$member.username class='img-circle' gravatar=true email=$member.email}
+					{ia_image file=$member.avatar title=$member.fullname|default:$member.username class='img-circle' gravatar=true email=$member.email}
 
 					{$member.fullname|default:$member.username}
 				</a>
